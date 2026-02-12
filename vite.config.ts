@@ -13,5 +13,19 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3210,
     strictPort: true
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+        }
+      }
+    }
+  },
+  worker: {
+    format: 'es'
   }
 })
