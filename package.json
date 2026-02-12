@@ -1,0 +1,28 @@
+{
+  "name": "perler-bead-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "在线拼豆图生成网站 - 上传图片自动转换为标准拼豆图纸",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3210",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3210",
+    "test:ui": "playwright test",
+    "test:screenshot": "playwright test --project=screenshot"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
